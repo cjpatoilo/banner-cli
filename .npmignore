@@ -1,0 +1,11 @@
+.appveyor.yml
+.coveralls.yml
+.editorconfig
+.eslintrc
+.github
+.gitignore
+.travis.yml
+changelog.md
+package.json
+src
+test

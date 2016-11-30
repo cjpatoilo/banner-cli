@@ -1,0 +1,47 @@
+{
+	"name": "banner-cli",
+	"version": "0.0.0",
+	"description": "Create a banner comment from package data.",
+	"homepage": "http://cjpatoilo.com/banner-cli",
+	"repository": "cjpatoilo/banner-cli",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"main": "index.js",
+	"keywords": [
+		"automation",
+		"banner",
+		"npm",
+		"package.json"
+	],
+	"ignore": [
+		".appveyor.yml",
+		".coveralls.yml",
+		".editorconfig",
+		".eslintrc",
+		".github",
+		".gitignore",
+		".npmignore",
+		".travis.yml",
+		"changelog.md",
+		"package.json",
+		"src",
+		"test"
+	],
+	"dependencies": {
+		"commander": "~2.9.0",
+	},
+	"devDependencies": {
+		"coveralls": "^2.11.15",
+		"intelli-espower-loader": "^1.0.1",
+		"istanbul": "^0.4.5",
+		"mocha": "^3.1.2",
+		"npm-run-all": "^2.3.0",
+		"power-assert": "^1.4.2"
+	},
+	"engines": {
+		"node": "^7.0.0"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 0"
+	}
+}
