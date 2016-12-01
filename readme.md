@@ -16,25 +16,41 @@
 Installing a npm package with --save will add the package as a dependency in your project's package.json file. This library reads that file, then reads the package.json files for each of those dependencies. Based on these connections, it determines the order your scripts must be included before injecting them between placeholders in your source code.
 
 
-## Download
+## Install
 
 **Install with npm**
 
 ```sh
-$ npm install -g banner-cli
+$ npm install banner-cli --save
 ```
 
 **Install with Yarn**
 
 ```sh
-$ yarn install -g banner-cli
+$ yarn install banner-cli --save
 ```
 
 
-## Table of Contents
+## Usage
 
-- [Getting Started](http://cjpatoilo.com/banner-cli#getting-started)
-- [Examples](http://cjpatoilo.com/banner-cli#examples)
+```
+$ banner-cli --help
+
+	Usage:
+
+		$ banner-cli <files> [<options>]
+
+	Options:
+
+		-h, --help              Display help information
+		-v, --version           Output version
+
+	Examples:
+
+		$ banner-cli dist/*.js
+		$ banner-cli dist/*.css
+
+```
 
 
 ## Contributing
