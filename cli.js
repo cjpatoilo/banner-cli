@@ -1,18 +1,6 @@
 #!/usr/bin/env node
 'use strict'
 
-// Prefer the local installation
-const resolveCwd = require('resolve-cwd')
-const hasFlag = require('has-flag')
-
-const localCLI = resolveCwd('banner-cli/cli')
-
-if (!hasFlag('no-local') && localCLI && localCLI !== __filename) {
-	console.log('Using local install of banner-cli.')
-	require(localCLI)
-	return
-}
-
 const banner = require('./')
 const pkg = require('./package.json')
 const argv = process.argv.slice(1)
