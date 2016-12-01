@@ -3,7 +3,7 @@ const path = require('path')
 const prependFile = require('prepend-file')
 
 function add(argv) {
-	const info = require('../../package.json')
+	const info = require(`${process.cwd()}/package.json`) || ' '
 	const name = info.name.charAt(0).toUpperCase() + info.name.slice(1) || 'Project name'
 	const version = info.version || '0.0.0'
 	const homepage = info.homepage || 'http://your-homepage.com'
@@ -12,7 +12,7 @@ function add(argv) {
 	const year = new Date().getFullYear()
 	const banner =  `/*!\n * ${name} v${version}\n * ${homepage}\n *\n * Copyright (c) ${year} ${author}\n * Licensed under the ${license} license\n*/\n\n`
 	if (!fs.existsSync(path.dirname(argv[0]))) {
-		console.log(`${argv[0]} Not exist!`)
+		console.log(`${argv[0]} Not found!`)
 		process.exit(1)
 	}
 
@@ -20,10 +20,9 @@ function add(argv) {
 		if (path.extname(file) === path.extname(argv[0])) {
 			prependFile(file, banner, (error) => {
 				if (error) {
-					console.log('${file} Error');
+					console.log(`${file} Not found!`);
 					process.exit(1)
 				}
-				console.log(`${file} Banner added successfully`);
 			})
 		}
 	})
