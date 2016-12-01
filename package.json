@@ -1,12 +1,16 @@
 {
 	"name": "banner-cli",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "Create a banner comment from package data.",
 	"homepage": "http://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"main": "index.js",
+	"bin": "cli.js",
+	"files": [
+		"cli.js",
+		"index.js"
+	],
 	"keywords": [
 		"automation",
 		"banner",
@@ -33,7 +37,9 @@
 	"devDependencies": {
 		"ava": "^0.17.0",
 		"coveralls": "^2.11.15",
-		"nyc": "^10.0.0"
+		"has-flag": "^2.0.0",
+		"nyc": "^10.0.0",
+		"resolve-cwd": "^1.0.0"
 	},
 	"engines": {
 		"node": "^7.0.0"
