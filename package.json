@@ -1,15 +1,15 @@
 {
 	"name": "banner-cli",
-	"version": "0.6.1",
+	"version": "0.7.0",
 	"description": "Create a banner comment from package data.",
 	"homepage": "http://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"bin": "cli.js",
+	"bin": "bin/cli.js",
 	"files": [
-		"cli.js",
-		"index.js"
+		"bin/cli.js",
+		"bin/banner.js"
 	],
 	"keywords": [
 		"automation",
@@ -20,7 +20,6 @@
 	"ignore": [
 		".appveyor.yml",
 		".editorconfig",
-		".eslintrc",
 		".github",
 		".gitignore",
 		".npmignore",
@@ -36,13 +35,14 @@
 	"devDependencies": {
 		"ava": "^0.17.0",
 		"coveralls": "^2.11.9",
-		"nyc": "^8.3.0"
+		"nyc": "^8.3.0",
+		"standard": "^8.6.0"
 	},
 	"engines": {
 		"node": "^7.0.0"
 	},
 	"scripts": {
-		"test": "nyc ava",
+		"test": "standard && nyc ava",
 		"coveralls": "nyc report --reporter=text-lcov | coveralls"
 	}
 }
