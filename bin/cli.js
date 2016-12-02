@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 
-const banner = require('./')
+const banner = require('./banner')
 const pkg = require('./package.json')
 const argv = process.argv.slice(2)
 
