@@ -19,7 +19,6 @@
 	],
 	"ignore": [
 		".appveyor.yml",
-		".coveralls.yml",
 		".editorconfig",
 		".eslintrc",
 		".github",
@@ -36,8 +35,8 @@
 	},
 	"devDependencies": {
 		"ava": "^0.17.0",
-		"coveralls": "^2.11.15",
-		"nyc": "^10.0.0"
+		"coveralls": "^2.11.9",
+		"nyc": "^8.3.0"
 	},
 	"engines": {
 		"node": "^7.0.0"
