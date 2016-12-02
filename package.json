@@ -1,6 +1,6 @@
 {
 	"name": "banner-cli",
-	"version": "0.7.0",
+	"version": "0.7.1",
 	"description": "Create a banner comment from package data.",
 	"homepage": "http://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
@@ -43,6 +43,6 @@
 	},
 	"scripts": {
 		"test": "standard && nyc ava",
-		"coveralls": "nyc report --reporter=text-lcov | coveralls"
+		"coverage": "nyc report --reporter=text-lcov | coveralls"
 	}
 }
