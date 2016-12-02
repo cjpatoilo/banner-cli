@@ -11,7 +11,23 @@ if (argv.indexOf('--version') !== -1 || argv.indexOf('-v') !== -1) {
 }
 
 if (argv.indexOf('--help') !== -1 || argv.indexOf('-h') !== -1) {
-  console.log('\n$ banner-cli --help\n\n  Usage:\n\n    $ banner-cli <files> [<options>]\n\n  Options:\n\n    -h, --help              Display help information\n    -v, --version           Output version\n\n  Examples:\n\n    $ banner-cli dist/*.js\n    $ banner-cli dist/*.css\n')
+  console.log(`
+  $ banner-cli --help
+
+    Usage:
+
+    $ banner-cli <files> [<options>]
+
+    Options:
+
+    -h, --help              Display help information
+    -v, --version           Output version
+
+    Examples:
+
+    $ banner-cli dist/*.js
+    $ banner-cli dist/*.css
+`)
   process.exit(1)
 }
 
