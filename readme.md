@@ -49,19 +49,19 @@ $ yarn install banner-cli --global
 ```
 $ banner-cli --help
 
-	Usage:
+  Usage:
 
-		$ banner-cli <files> [<options>]
+    $ banner-cli <files> [<options>]
 
-	Options:
+  Options:
 
-		-h, --help              Display help information
-		-v, --version           Output version
+    -h, --help              Display help information
+    -v, --version           Output version
 
-	Examples:
+  Examples:
 
-		$ banner-cli dist/*.js
-		$ banner-cli dist/*.css
+    $ banner-cli dist/*.js
+    $ banner-cli dist/*.css
 
 ```
 
