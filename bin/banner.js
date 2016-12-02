@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const prependFile = require('prepend-file')
 
-function add(argv) {
+function add (argv) {
   const info = require(`${process.cwd()}/package.json`)
   const name = info.name.charAt(0).toUpperCase() + info.name.slice(1) || 'Project name'
   const version = info.version || '0.0.0'
@@ -10,7 +10,7 @@ function add(argv) {
   const license = info.license || 'your'
   const author = info.author.split('<')[0].trim() || 'Author name'
   const year = new Date().getFullYear()
-  const banner =  `/*!\n
+  const banner = `/*!\n
  * ${name} v${version}\n
  * ${homepage}\n
  *\n
