@@ -29,18 +29,10 @@ Installing a npm package with --global will add the package as a dependency in y
 ```
 
 
-## Install
-
-**Install with npm**
+## Installation
 
 ```sh
 $ npm install banner-cli --global
-```
-
-**Install with Yarn**
-
-```sh
-$ yarn install banner-cli --global
 ```
 
 
