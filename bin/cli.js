@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict'
 
-const banner = require('./banner')
-const pkg = require('./package.json')
+const cli = require('../src/index')
+const pkg = require('../package.json')
 const argv = process.argv.slice(2)
 
 if (argv.indexOf('--version') !== -1 || argv.indexOf('-v') !== -1) {
@@ -31,4 +31,4 @@ if (argv.indexOf('--help') !== -1 || argv.indexOf('-h') !== -1) {
   process.exit(1)
 }
 
-banner.add(argv)
+cli.add(argv)
