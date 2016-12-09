@@ -32,15 +32,13 @@
   },
   "devDependencies": {
     "ava": "^0.17.0",
-    "coveralls": "^2.11.9",
     "nyc": "^8.3.0",
     "standard": "^8.6.0"
   },
   "engines": {
-    "node": "^7.0.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "standard && nyc ava",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "standard && nyc ava"
   }
 }
