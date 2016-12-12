@@ -5,7 +5,7 @@
 [![Travis Status](https://travis-ci.org/cjpatoilo/banner-cli.svg?branch=master)](https://travis-ci.org/cjpatoilo/banner-cli?branch=master)
 [![AppVeyor Status](https://ci.appveyor.com/api/projects/status/efthn2yp6c57gu1b?svg=true)](https://ci.appveyor.com/project/cjpatoilo/banner-cli)
 [![Codacy Status](https://img.shields.io/codacy/grade/848fb4bd6902434fab0bcfb5461284fe/master.svg)](https://www.codacy.com/app/cjpatoilo/banner-cli/dashboard)
-[![Dependencies Status](https://david-dm.org/cjpatoilo/banner-cli.svg)](https://travis-ci.org/cjpatoilo/banner-cli?branch=master)
+[![Dependencies Status](https://david-dm.org/cjpatoilo/banner-cli/status.svg)](https://david-dm.org/cjpatoilo/banner-cli)
 [![Version Status](https://badge.fury.io/js/banner-cli.svg)](https://www.npmjs.com/package/banner-cli)
 [![Download Status](https://img.shields.io/npm/dt/banner-cli.svg)](https://www.npmjs.com/package/banner-cli)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/banner-cli)
