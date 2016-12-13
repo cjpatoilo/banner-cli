@@ -12,13 +12,13 @@ function add (argv) {
   const license = info.license || 'your'
   const author = info.author.split('<')[0].trim() || 'Author name'
   const year = new Date().getFullYear()
-  const banner = `/*!\n
- * ${name} v${version}\n
- * ${homepage}\n
- *\n
- * Copyright (c) ${year} ${author}\n
- * Licensed under the ${license} license\n
- */\n\n
+  const banner = `/*!
+ * ${name} v${version}
+ * ${homepage}
+ *
+ * Copyright (c) ${year} ${author}
+ * Licensed under the ${license} license
+ */\n
 `
   if (!fs.existsSync(path.dirname(argv[0]))) {
     console.log(`${argv[0]} Not found!`)
