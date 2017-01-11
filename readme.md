@@ -11,7 +11,7 @@
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/banner-cli)
 
 
-## Why it's awesome?
+## Why it's awesome
 
 A command line interface to add relevant information to your source code from package data. This lib reads the `package.json` files, then a banner is generated based on each of these values: `name`, `version`, `homepage`, `year`, `author` and `license`.
 
@@ -19,10 +19,10 @@ A command line interface to add relevant information to your source code from pa
 ## Install
 
 ```sh
-$ npm install -g banner-cli
+$ npm install banner-cli
 ```
 
-Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.
+*NOTE: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.*
 
 
 ## Usage
@@ -36,14 +36,19 @@ $ banner-cli --help
 
   Options:
 
+    -n, --name              Define project name
+    -t, --tag               Define tag version
+    -s, --site              Define homepage
+    -a, --author            Define author
+    -y, --year              Define year
+    -l, --license           Define license
     -h, --help              Display help information
     -v, --version           Output version
 
   Examples:
 
     $ banner-cli dist/*.js
-    $ banner-cli dist/*.css
-
+    $ banner-cli dist/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.github.io
 ```
 
 
@@ -53,11 +58,11 @@ from package data
 
 ```json
 {
-    "name": "milligram",
-    "version": "1.0.0",
-    "homepage": "http://milligram.github.io",
-    "license": "MIT",
-    "author": "CJ Patoilo <cjpatoilo@gmail.com>"
+	"name": "milligram",
+	"version": "1.0.0",
+	"homepage": "http://milligram.github.io",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>"
 }
 ```
 
@@ -68,7 +73,7 @@ to create a banner comment
  * Milligram v1.0.0
  * http://milligram.github.io
  *
- * Copyright (c) 2016 CJ Patoilo
+ * Copyright (c) 2017 CJ Patoilo
  * Licensed under the MIT license
  */
 ```
@@ -81,4 +86,4 @@ Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](http://cjpatoilo.com). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [CJ Patoilo](http://twitter.com/cjpatoilo). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
