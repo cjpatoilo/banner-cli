@@ -1,18 +1,21 @@
 'use strict'
-
-const fs = require('fs')
-const path = require('path')
 const prependFile = require('prepend-file')
 
-function add (argv) {
-  const info = require(`${process.cwd()}/package.json`)
-  const name = info.name.charAt(0).toUpperCase() + info.name.slice(1) || 'Project name'
-  const version = info.version || '0.0.0'
-  const homepage = info.homepage || 'http://your-homepage.com'
-  const license = info.license || 'your'
-  const author = info.author.split('<')[0].trim() || 'Author name'
-  const year = new Date().getFullYear()
-  const banner = `/*!
+function resolve (value) {
+	if (typeof value === 'boolean') value = undefined
+	return value
+}
+
+function banner (argv) {
+	const source = argv._
+	const pkg = require(`${process.cwd()}/package.json`)
+	const name = resolve(argv.n) || resolve(argv.name) || pkg.name.charAt(0).toUpperCase() + pkg.name.slice(1) || 'Project Name'
+	const version = resolve(argv.t) || resolve(argv.tag) || pkg.version || '0.0.0'
+	const homepage = resolve(argv.s) || resolve(argv.site) || pkg.homepage || 'https://npm.com'
+	const license = resolve(argv.l) || resolve(argv.license) || pkg.license || 'Unlicensed'
+	const author = resolve(argv.a) || resolve(argv.author) || pkg.author.split('<')[0].trim() || 'Unknown Author'
+	const year = resolve(argv.y) || resolve(argv.year) || new Date().getFullYear()
+	const template = `/*!
  * ${name} v${version}
  * ${homepage}
  *
@@ -20,21 +23,11 @@ function add (argv) {
  * Licensed under the ${license} license
  */\n
 `
-  if (!fs.existsSync(path.dirname(argv[0]))) {
-    console.log(`${argv[0]} Not found!`)
-    process.exit(1)
-  }
 
-  argv.map(file => {
-    if (path.extname(file) === path.extname(argv[0])) {
-      prependFile(file, banner, (error) => {
-        if (error) {
-          console.log(`${file} Not found!`)
-          process.exit(1)
-        }
-      })
-    }
-  })
+	if (!source.length) console.log(`File not found!`)
+	else source.map(file => prependFile(file, template))
+
+	process.exit(0)
 }
 
-exports.add = add
+module.exports = banner

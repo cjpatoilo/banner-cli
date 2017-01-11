@@ -3,32 +3,38 @@
 
 const cli = require('../src/index')
 const pkg = require('../package.json')
-const argv = process.argv.slice(2)
+const argv = require('minimist')(process.argv.slice(2))
 
-if (argv.indexOf('--version') !== -1 || argv.indexOf('-v') !== -1) {
-  console.log(pkg.version)
-  process.exit(1)
+if (argv.version || argv.v) {
+	console.log(pkg.version)
+	process.exit(0)
 }
 
-if (argv.indexOf('--help') !== -1 || argv.indexOf('-h') !== -1) {
-  console.log(`
-  $ banner-cli --help
-
-    Usage:
+if (argv.help || argv.h) {
+	console.log(`
+  Usage:
 
     $ banner-cli <files> [<options>]
 
-    Options:
+  Options:
 
+    -n, --name              Define project name
+    -t, --tag               Define tag version
+    -s, --site              Define homepage
+    -a, --author            Define author
+    -y, --year              Define year
+    -l, --license           Define license
     -h, --help              Display help information
     -v, --version           Output version
 
-    Examples:
+  Examples:
 
     $ banner-cli dist/*.js
-    $ banner-cli dist/*.css
-`)
-  process.exit(1)
+    $ banner-cli dist/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.github.io
+	`)
+	process.exit(0)
 }
 
-cli.add(argv)
+if (argv._.length) {
+	cli(argv)
+}
