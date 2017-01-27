@@ -4,13 +4,14 @@
 const cli = require('../src/index')
 const pkg = require('../package.json')
 const argv = require('minimist')(process.argv.slice(2))
+let options = {}
 
-if (argv.version || argv.v) {
+if (argv.v || argv.version) {
 	console.log(pkg.version)
 	process.exit(0)
 }
 
-if (argv.help || argv.h) {
+if (argv.h || argv.help) {
 	console.log(`
   Usage:
 
@@ -35,6 +36,55 @@ if (argv.help || argv.h) {
 	process.exit(0)
 }
 
-if (argv._.length) {
-	cli(argv)
+if (argv.n && argv.n !== true) {
+	options.name = argv.n
+}
+
+if (argv.name && argv.name !== true) {
+	options.name = argv.name
+}
+
+if (argv.t && argv.t !== true) {
+	options.tag = argv.t
+}
+
+if (argv.tag && argv.tag !== true) {
+	options.tag = argv.tag
+}
+
+if (argv.s && argv.s !== true) {
+	options.homepage = argv.s
+}
+
+if (argv.site && argv.site !== true) {
+	options.homepage = argv.site
+}
+
+if (argv.l && argv.l !== true) {
+	options.license = argv.l
+}
+
+if (argv.license && argv.license !== true) {
+	options.license = argv.license
+}
+
+if (argv.a && argv.a !== true) {
+	options.author = argv.a
+}
+
+if (argv.author && argv.author !== true) {
+	options.author = argv.author
+}
+
+if (argv.year && argv.year !== true) {
+	options.year = argv.year
+}
+
+if (argv.y && argv.y !== true) {
+	options.year = argv.y
+}
+
+if (argv._[0]) {
+	options.source = argv._[0]
+	cli(options)
 }
