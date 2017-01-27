@@ -15,12 +15,12 @@ We would love for you to contribute to **BannerCLI** and help us make this even 
 
 ## Open an Issue
 
-[Open an Issue](https://github.com/cjpatoilo/banner-cli/issues/new) to report any problems or improvements. When necessary, use some online service to show the problem. Be sure to include some description to explain the problem.
+[Open an Issue](https://github.com/cjpatoilo/banner-cli/issues/new) to report any problems or improvements. When necessary, use some online service like a [JS Bin](https://jsbin.com), [JSFiddle](https://jsfiddle.net/), [Codepen](http://codepen.io/), to show the problem. Be sure to include some description to explain the problem.
 
 
 ## Submit a Pull Request
 
-To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests and attach the link [Codepen](http://codepen.io/) along with the description.
+To submit a new feature, make sure that changes are done to the source code. [Follow our style guide](#style-guide) and do not forget the tests.
 
 Try to solve a problem for each pull request, this increases the chances of acceptance. When in doubt, open a [new issue](#open-an-issue) so we can answer you. Look existing issues for ideas or to see if a similar issue has already been submitted.
 
@@ -35,7 +35,7 @@ Try to solve a problem for each pull request, this increases the chances of acce
 
 Look at how the code is being maintained, we must always be consistent. We try to follow best practices as much as possible. In addition, here are some tips you should follow:
 
-**BannerCLI** uses [ESLInt](http://eslint.org/), the pluggable linting utility for JavaScript.
+**BannerCLI** uses [ESLint](http://eslint.org/), the pluggable linting utility for JavaScript.
 
 - No semicolons.
 - No unused variables.
