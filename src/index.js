@@ -24,7 +24,7 @@ function banner (options) {
 	else {
 		glob(options.source, (err, files) => {
 			if (err) throw err
-			files.map(file => prependFile(file, template))
+			files.map(file => prependFile.sync(file, template))
 			process.exit(0)
 		})
 	}
