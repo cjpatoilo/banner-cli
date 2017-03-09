@@ -1,6 +1,6 @@
 {
 	"name": "banner-cli",
-	"version": "0.10.1",
+	"version": "0.11.0",
 	"description": "Create a banner comment from package data.",
 	"homepage": "http://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
