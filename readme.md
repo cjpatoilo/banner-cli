@@ -33,13 +33,37 @@ $ yarn add banner-cli
 *NOTE: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.*
 
 
-**Usage**
+## Usage
+
+*NOTE: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff.*
 
 ```bash
-$ banner-cli <files>
+$ banner-cli dist/**/*.css
 ```
 
-NOTE: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff. i.e: dist/**/*.css
+from `package.json` data:
+
+```json
+{
+	"name": "milligram",
+	"version": "1.0.0",
+	"homepage": "http://milligram.io",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>"
+}
+```
+
+to add a banner comment:
+
+```js
+/*!
+ * Milligram v1.0.0
+ * http://milligram.io
+ *
+ * Copyright (c) 2016 CJ Patoilo
+ * Licensed under the MIT license
+ */
+```
 
 
 ## CLI
@@ -66,33 +90,6 @@ $ banner-cli --help
 
     $ banner-cli dist/**/*.js
     $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site http://milligram.io
-```
-
-
-## Example
-
-from `package.json` data
-
-```json
-{
-	"name": "milligram",
-	"version": "1.0.0",
-	"homepage": "http://milligram.io",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>"
-}
-```
-
-to create a banner comment
-
-```js
-/*!
- * Milligram v1.0.0
- * http://milligram.io
- *
- * Copyright (c) 2016 CJ Patoilo
- * Licensed under the MIT license
- */
 ```
 
 
