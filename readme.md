@@ -16,18 +16,35 @@
 A command line interface to add relevant information to your source code from package data. This lib reads the `package.json` files, then a banner is generated based on each of these values: `name`, `version`, `homepage`, `year`, `author` and `license`.
 
 
-## Install
+## Getting Started
 
-```sh
+**Install with npm**
+
+```bash
 $ npm install banner-cli
+```
+
+**Install with Yarn**
+
+```bash
+$ yarn add banner-cli
 ```
 
 *NOTE: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.*
 
 
-## Usage
+**Usage**
 
+```bash
+$ banner-cli <files>
 ```
+
+NOTE: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff. i.e: dist/**/*.css
+
+
+## CLI
+
+```bash
 $ banner-cli --help
 
   Usage:
@@ -47,20 +64,20 @@ $ banner-cli --help
 
   Examples:
 
-    $ banner-cli dist/*.js
-    $ banner-cli dist/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.github.io
+    $ banner-cli dist/**/*.js
+    $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site http://milligram.io
 ```
 
 
 ## Example
 
-from package data
+from `package.json` data
 
 ```json
 {
 	"name": "milligram",
 	"version": "1.0.0",
-	"homepage": "http://milligram.github.io",
+	"homepage": "http://milligram.io",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>"
 }
@@ -71,9 +88,9 @@ to create a banner comment
 ```js
 /*!
  * Milligram v1.0.0
- * http://milligram.github.io
+ * http://milligram.io
  *
- * Copyright (c) 2017 CJ Patoilo
+ * Copyright (c) 2016 CJ Patoilo
  * Licensed under the MIT license
  */
 ```

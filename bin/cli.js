@@ -30,8 +30,8 @@ if (argv.h || argv.help) {
 
   Examples:
 
-    $ banner-cli dist/*.js
-    $ banner-cli dist/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.github.io
+    $ banner-cli dist/**/*.js
+    $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site http://milligram.io
 	`)
 	process.exit(0)
 }
