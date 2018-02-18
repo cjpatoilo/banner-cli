@@ -3,8 +3,7 @@ const glob = require('glob')
 const prependFile = require('prepend-file')
 const pkg = require(`${process.cwd()}/package.json`)
 
-function banner (options) {
-	options = options || {}
+function banner (options = {}) {
 	options.name = options.name || pkg.name || 'unknown'
 	options.tag = options.tag || pkg.version || '0.0.0'
 	options.homepage = options.homepage || pkg.homepage || `https://npm.com/${options.name}`
@@ -20,8 +19,9 @@ function banner (options) {
  *${options.license ? ` Licensed under the ${options.license} license\n *` : ''}/\n
 `
 
-	if (!options.source) throw new Error(`File not found!`)
-	else {
+	if (!options.source) {
+		throw new Error(`File not found!`)
+	} else {
 		glob(options.source, (err, files) => {
 			if (err) throw err
 			files.map(file => prependFile.sync(file, template))
