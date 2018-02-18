@@ -1,4 +1,4 @@
-<a align="center" href="http://cjpatoilo.com/banner-cli"><img width="100%" src="http://cjpatoilo.com/banner-cli/images/thumbnail.png" alt="Create a banner comment from package data."></a>
+<a align="center" href="https://github.com/cjpatoilo/banner-cli"><img width="100%" src="https://cjpatoilo.com/banner-cli/artwork.png" alt="BannerCLI - Create a banner comment from package data."></a>
 
 > Create a banner comment from package data.
 
@@ -30,12 +30,18 @@ $ npm install banner-cli
 $ yarn add banner-cli
 ```
 
-*NOTE: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.*
+Run with npx (without installing)
+
+```bash
+$ npx banner-cli
+```
+
+*Note: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.*
 
 
 ## Usage
 
-*NOTE: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff.*
+*Note: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff.*
 
 ```bash
 $ banner-cli dist/**/*.css
@@ -46,8 +52,8 @@ from `package.json` data:
 ```json
 {
 	"name": "milligram",
-	"version": "1.0.0",
-	"homepage": "http://milligram.io",
+	"version": "1.4.0",
+	"homepage": "https://milligram.io",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>"
 }
@@ -57,10 +63,10 @@ to add a banner comment:
 
 ```js
 /*!
- * Milligram v1.0.0
- * http://milligram.io
+ * Milligram v1.4.0
+ * https://milligram.io
  *
- * Copyright (c) 2016 CJ Patoilo
+ * Copyright (c) 2018 CJ Patoilo
  * Licensed under the MIT license
  */
 ```
@@ -89,15 +95,16 @@ $ banner-cli --help
   Examples:
 
     $ banner-cli dist/**/*.js
-    $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site http://milligram.io
+    $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.io
+
 ```
 
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/banner-cli/blob/master/.github/contributing.md).
+Want to contribute? Follow these [recommendations](.github/contributing.md).
 
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](http://twitter.com/cjpatoilo). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).

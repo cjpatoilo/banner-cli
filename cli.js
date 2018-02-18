@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 'use strict'
 
-const cli = require('../src/index')
-const pkg = require('../package.json')
-const argv = require('minimist')(process.argv.slice(2))
+const cli = require('./index')
+const pkg = require('./package.json')
+const argv = require('rasper')()
 let options = {}
 
 if (argv.v || argv.version) {

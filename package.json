@@ -1,18 +1,19 @@
 {
 	"name": "banner-cli",
-	"version": "0.11.1",
+	"version": "0.12.0",
 	"description": "Create a banner comment from package data.",
-	"homepage": "http://cjpatoilo.com/banner-cli",
+	"homepage": "https://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"bin": "bin/cli.js",
-	"main": "src/index.js",
+	"bin": "cli.js",
+	"main": "index.js",
 	"files": [
-		"bin/cli.js",
-		"src/index.js"
+		"cli.js",
+		"index.js"
 	],
 	"keywords": [
+		"🐥",
 		"author",
 		"automation",
 		"banner",
@@ -30,6 +31,7 @@
 		"versions"
 	],
 	"ignore": [
+		"artwork.psd",
 		".appveyor.yml",
 		".editorconfig",
 		".github",
@@ -38,21 +40,24 @@
 	],
 	"dependencies": {
 		"glob": "^7.1.2",
-		"minimist": "^1.2.0",
+		"rasper": "latest",
 		"prepend-file": "^1.3.1"
 	},
 	"devDependencies": {
-		"ava": "^0.21.0",
+		"ava": "^0.25.0",
+		"boeing": "latest",
 		"editorconfig-tools": "^0.1.1",
-		"eslint": "^4.4.1",
+		"eslint": "^4.18.0",
 		"eslint-config-styled": "0.0.2",
 		"husky": "^0.14.3",
-		"nyc": "^10.3.2"
+		"marshmallow": "latest",
+		"nyc": "^11.4.1"
 	},
 	"engines": {
 		"node": ">=4"
 	},
 	"scripts": {
+		"prepush": "marshmallow -o docs -i artwork.psd -t BannerCLI -d 'Create a banner comment from package data.' -f -m && boeing docs && rimraf docs",
 		"precommit": "npm t",
 		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore && editorconfig-tools check ."
 	}
