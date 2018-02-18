@@ -2,7 +2,7 @@
 	"name": "banner-cli",
 	"version": "0.11.1",
 	"description": "Create a banner comment from package data.",
-	"homepage": "http://cjpatoilo.com/banner-cli",
+	"homepage": "https://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
 	"license": "MIT",
 	"author": "CJ Patoilo <cjpatoilo@gmail.com>",

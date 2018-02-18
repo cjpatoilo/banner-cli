@@ -1,4 +1,4 @@
-<a align="center" href="http://cjpatoilo.com/banner-cli"><img width="100%" src="http://cjpatoilo.com/banner-cli/images/thumbnail.png" alt="Create a banner comment from package data."></a>
+<a align="center" href="https://cjpatoilo.com/banner-cli"><img width="100%" src="https://cjpatoilo.com/banner-cli/images/thumbnail.png" alt="Create a banner comment from package data."></a>
 
 > Create a banner comment from package data.
 
@@ -100,4 +100,4 @@ Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](http://twitter.com/cjpatoilo). Licensed under the [MIT License](http://cjpatoilo.mit-license.org).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).
