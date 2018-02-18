@@ -15,7 +15,7 @@ We would love for you to contribute to **BannerCLI** and help us make this even 
 
 ## Open an Issue
 
-[Open an Issue](https://github.com/cjpatoilo/banner-cli/issues/new) to report any problems or improvements. When necessary, use some online service like a [JS Bin](https://jsbin.com), [JSFiddle](https://jsfiddle.net/), [Codepen](http://codepen.io/), to show the problem. Be sure to include some description to explain the problem.
+[Open an Issue](../../../issues/new) to report any problems or improvements. When necessary, use some online service like a [JS Bin](https://jsbin.com), [JSFiddle](https://jsfiddle.net/), [Codepen](http://codepen.io/), to show the problem. Be sure to include some description to explain the problem.
 
 
 ## Submit a Pull Request
