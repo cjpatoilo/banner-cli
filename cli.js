@@ -3,7 +3,7 @@
 
 const cli = require('./index')
 const pkg = require('./package.json')
-const argv = require('rasper')()
+const argv = require('rasper')(process.argv.slice(2))
 let options = {}
 
 if (argv.v || argv.version) {
