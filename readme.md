@@ -66,7 +66,7 @@ to add a banner comment:
  * Milligram v1.4.0
  * https://milligram.io
  *
- * Copyright (c) 2018 CJ Patoilo
+ * Copyright (c) 2019 CJ Patoilo
  * Licensed under the MIT license
  */
 ```
