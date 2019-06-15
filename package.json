@@ -59,6 +59,6 @@
 	"scripts": {
 		"prepush": "marshmallow -o docs -i artwork.psd -t BannerCLI -d 'Create a banner comment from package data.' -f -m && boeing docs && rimraf docs",
 		"precommit": "npm t",
-		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore && editorconfig-tools check ."
+		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore"
 	}
 }
