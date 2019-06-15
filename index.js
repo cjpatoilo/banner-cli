@@ -9,6 +9,8 @@ const getAuthorName = value => {
 	return ''
 }
 
+const unlicense = 'This is free and unencumbered software'
+
 function banner (options = {}) {
 	options.name = options.name || pkg.name || 'unknown'
 	options.tag = options.tag || pkg.version || '0.0.0'
@@ -22,7 +24,7 @@ function banner (options = {}) {
   * ${options.homepage}
   *
   * Copyright (c) ${options.year} ${options.author}
-  *${options.license ? ` Licensed under the ${options.license} license\n *` : ''}/\n
+  * ${options.license ? `Licensed under the ${options.license} license\n *` : unlicense}/\n
 `
 
 	if (!options.source) {
