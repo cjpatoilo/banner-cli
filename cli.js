@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 'use strict'
 
-const cli = require('./index')
+const argv = require('rasper')(process.argv.slice(2))
+
 const pkg = require('./package.json')
-const argv = require('rasper')()
+const banner = require('./')
+
 let options = {}
 
 if (argv.v || argv.version) {
@@ -31,7 +33,7 @@ if (argv.h || argv.help) {
   Examples:
 
     $ banner-cli dist/**/*.js
-    $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site http://milligram.io
+    $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.io
 	`)
 	process.exit(0)
 }
@@ -86,5 +88,5 @@ if (argv.y && argv.y !== true) {
 
 if (argv._[0]) {
 	options.source = argv._[0]
-	cli(options)
+	banner(options)
 }

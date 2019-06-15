@@ -12,11 +12,11 @@ function banner (options = {}) {
 	options.year = options.year || new Date().getFullYear()
 
 	const template = options.template || `/*!
- * ${options.name.charAt(0).toUpperCase() + options.name.slice(1)} v${options.tag}
- * ${options.homepage}
- *
- * Copyright (c) ${options.year} ${options.author}
- *${options.license ? ` Licensed under the ${options.license} license\n *` : ''}/\n
+  * ${options.name.charAt(0).toUpperCase() + options.name.slice(1)} v${options.tag}
+  * ${options.homepage}
+  *
+  * Copyright (c) ${options.year} ${options.author}
+  *${options.license ? ` Licensed under the ${options.license} license\n *` : ''}/\n
 `
 
 	if (!options.source) {

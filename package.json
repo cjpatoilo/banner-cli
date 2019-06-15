@@ -1,6 +1,6 @@
 {
 	"name": "banner-cli",
-	"version": "0.12.0",
+	"version": "0.13.0",
 	"description": "Create a banner comment from package data.",
 	"homepage": "https://cjpatoilo.com/banner-cli",
 	"repository": "cjpatoilo/banner-cli",
@@ -39,26 +39,26 @@
 		".travis.yml"
 	],
 	"dependencies": {
-		"glob": "^7.1.2",
-		"rasper": "latest",
-		"prepend-file": "^1.3.1"
+		"glob": "^7.1.4",
+		"prepend-file": "^1.3.1",
+		"rasper": "latest"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
+		"ava": "^2.1.0",
 		"boeing": "latest",
 		"editorconfig-tools": "^0.1.1",
-		"eslint": "^4.18.0",
+		"eslint": "^5.16.0",
 		"eslint-config-styled": "0.0.2",
-		"husky": "^0.14.3",
+		"husky": "^2.4.1",
 		"marshmallow": "latest",
-		"nyc": "^11.4.1"
+		"nyc": "^14.1.1"
 	},
 	"engines": {
-		"node": ">=4"
+		"node": ">10.0.0"
 	},
 	"scripts": {
 		"prepush": "marshmallow -o docs -i artwork.psd -t BannerCLI -d 'Create a banner comment from package data.' -f -m && boeing docs && rimraf docs",
 		"precommit": "npm t",
-		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore && editorconfig-tools check ."
+		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore"
 	}
 }
