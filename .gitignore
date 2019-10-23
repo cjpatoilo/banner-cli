@@ -1,42 +1,16 @@
-$RECYCLE.BIN/
-*.cab
-*.lnk
-*.log
-*.msi
-*.msm
-*.msp
-*.pid
-*.seed
-*~
-.AppleDB
-.AppleDesktop
-.AppleDouble
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
-.DocumentRevisions-V100
-.LSOverride
-.Spotlight-V100
-.TemporaryItems
-.Trash-*
-.Trashes
-.VolumeIcon.icns
-._*
-.apdisk
-.directory
-.fseventsd
-.lock-wscript
-.node_repl_history
-.npm
-.nyc_output
-Desktop.ini
-Icon
-Network Trash Folder
-Temporary Items
-Thumbs.db
-build/Release
-coverage
-ehthumbs.db
-lib-cov
-logs
-node_modules
-npm-debug.log*
-pids
+*.log*

@@ -1,4 +1,4 @@
-<a align="center" href="https://github.com/cjpatoilo/banner-cli"><img width="100%" src="https://cjpatoilo.com/banner-cli/artwork.png" alt="BannerCLI - Create a banner comment from package data."></a>
+<a href="https://github.com/cjpatoilo/banner-cli"><img width="100%" src="https://cjpatoilo.com/banner-cli/artwork.png" alt="BannerCLI - Create a banner comment from package data."></a>
 
 > Create a banner comment from package data.
 
@@ -102,9 +102,9 @@ $ banner-cli --help
 
 ## Contributing
 
-Want to contribute? Follow these [recommendations](.github/contributing.md).
+Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/banner-cli#contributing).
 
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](license).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://github.com/cjpatoilo/banner-cli#license).
