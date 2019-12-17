@@ -24,7 +24,8 @@ function banner (options = {}) {
   * ${options.homepage}
   *
   * Copyright (c) ${options.year} ${options.author}
-  * ${options.license ? `Licensed under the ${options.license} license\n *` : unlicense}/\n
+  * ${options.license ? `Licensed under the ${options.license} license` : unlicense}
+  */\n
 `
 
 	if (!options.source) {
