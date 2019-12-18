@@ -27,6 +27,7 @@ if (argv.h || argv.help) {
     -a, --author            Define author
     -y, --year              Define year
     -l, --license           Define license
+        --template          Define template
     -h, --help              Display help information
     -v, --version           Output version
 
@@ -34,6 +35,7 @@ if (argv.h || argv.help) {
 
     $ banner-cli dist/**/*.js
     $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.io
+    $ banner-cli dist/**/*.css --template '/*<br> [name]<br> [tag]<br> [site]<br> [author]<br> [year]<br> [license]<br> [time] */'
 	`)
 	process.exit(0)
 }
@@ -84,6 +86,10 @@ if (argv.year && argv.year !== true) {
 
 if (argv.y && argv.y !== true) {
 	options.year = argv.y
+}
+
+if (argv.template && argv.template !== true) {
+	options.template = argv.template
 }
 
 if (argv._[0]) {

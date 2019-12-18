@@ -89,6 +89,7 @@ $ banner-cli --help
     -a, --author            Define author
     -y, --year              Define year
     -l, --license           Define license
+        --template          Define template
     -h, --help              Display help information
     -v, --version           Output version
 
@@ -96,6 +97,7 @@ $ banner-cli --help
 
     $ banner-cli dist/**/*.js
     $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.io
+    $ banner-cli dist/**/*.css --template '/*<br> [name]<br> [tag]<br> [site]<br> [author]<br> [year]<br> [license]<br> [time] */'
 
 ```
 
