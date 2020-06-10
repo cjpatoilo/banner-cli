@@ -9,12 +9,12 @@ const banner = require('./')
 let options = {}
 
 if (argv.v || argv.version) {
-	console.log(pkg.version)
-	process.exit(0)
+  console.log(pkg.version)
+  process.exit(0)
 }
 
 if (argv.h || argv.help) {
-	console.log(`
+  console.log(`
   Usage:
 
     $ banner-cli <files> [<options>]
@@ -35,58 +35,58 @@ if (argv.h || argv.help) {
     $ banner-cli dist/**/*.js
     $ banner-cli dist/**/*.css --author 'CJ Patoilo' --license MIT --site https://milligram.io
 	`)
-	process.exit(0)
+  process.exit(0)
 }
 
 if (argv.n && argv.n !== true) {
-	options.name = argv.n
+  options.name = argv.n
 }
 
 if (argv.name && argv.name !== true) {
-	options.name = argv.name
+  options.name = argv.name
 }
 
 if (argv.t && argv.t !== true) {
-	options.tag = argv.t
+  options.tag = argv.t
 }
 
 if (argv.tag && argv.tag !== true) {
-	options.tag = argv.tag
+  options.tag = argv.tag
 }
 
 if (argv.s && argv.s !== true) {
-	options.homepage = argv.s
+  options.homepage = argv.s
 }
 
 if (argv.site && argv.site !== true) {
-	options.homepage = argv.site
+  options.homepage = argv.site
 }
 
 if (argv.l && argv.l !== true) {
-	options.license = argv.l
+  options.license = argv.l
 }
 
 if (argv.license && argv.license !== true) {
-	options.license = argv.license
+  options.license = argv.license
 }
 
 if (argv.a && argv.a !== true) {
-	options.author = argv.a
+  options.author = argv.a
 }
 
 if (argv.author && argv.author !== true) {
-	options.author = argv.author
+  options.author = argv.author
 }
 
 if (argv.year && argv.year !== true) {
-	options.year = argv.year
+  options.year = argv.year
 }
 
 if (argv.y && argv.y !== true) {
-	options.year = argv.y
+  options.year = argv.y
 }
 
 if (argv._[0]) {
-	options.source = argv._[0]
-	banner(options)
+  options.source = argv._[0]
+  banner(options)
 }

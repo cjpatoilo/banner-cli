@@ -2,7 +2,6 @@
 
 We would love for you to contribute to **BannerCLI** and help us make this even better! Start reading this document to see it is not difficult as you might have imagined.
 
-
 ## Table of Contents
 
 - [Open an Issue](#open-an-issue)
@@ -12,11 +11,9 @@ We would love for you to contribute to **BannerCLI** and help us make this even 
 - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
-
 ## Open an Issue
 
 [Open an Issue](../../../issues/new) to report any problems or improvements. When necessary, use some online service like a [JS Bin](https://jsbin.com), [JSFiddle](https://jsfiddle.net/), [Codepen](http://codepen.io/), to show the problem. Be sure to include some description to explain the problem.
-
 
 ## Submit a Pull Request
 
@@ -29,7 +26,6 @@ Try to solve a problem for each pull request, this increases the chances of acce
 1. Commit your changes: `git commit -m 'issuenumber-feature-name'`
 1. Push to the branch: `git push origin my-feature-name`
 1. Submit a pull request!
-
 
 ## Style Guide
 
@@ -55,18 +51,15 @@ Look at how the code is being maintained, we must always be consistent. We try t
 - For var declarations, write each declaration in its own statement.
 - Wrap conditional assignments with additional parentheses. This makes it clear that the expression is intentionally an assignment (`=`) rather than a typo for equality (`===`).
 
-*NOTE: The best way to learn about that is to just install it and give it a try on your code. **BannerCLI** uses an `.editorconfig` file, which most editors support, to enforce these coding standards.*
-
+_NOTE: The best way to learn about that is to just install it and give it a try on your code. **BannerCLI** uses an `.editorconfig` file, which most editors support, to enforce these coding standards._
 
 ## Test
 
 First install [Node.js](https://nodejs.org/en/download/). Now install all the dependencies, run `npm install` from the project directory. Once you have the dependencies installed, run `npm test`.
 
-
 ## Code of Conduct
 
 Help us keep **BannerCLI** open and inclusive. Please read and follow our thoughts on [Code of Conduct](http://confcodeofconduct.com/).
-
 
 ## License
 
