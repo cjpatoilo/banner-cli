@@ -10,11 +10,9 @@
 [![Download Status](https://img.shields.io/npm/dt/banner-cli.svg)](https://www.npmjs.com/package/banner-cli)
 [![Gitter Chat](https://img.shields.io/badge/gitter-join_the_chat-4cc61e.svg)](https://gitter.im/cjpatoilo/banner-cli)
 
-
 ## Why it's awesome
 
 A command line interface to add relevant information to your source code from package data. This lib reads the `package.json` files, then a banner is generated based on each of these values: `name`, `version`, `homepage`, `year`, `author` and `license`.
-
 
 ## Getting Started
 
@@ -36,12 +34,11 @@ Run with npx (without installing)
 $ npx banner-cli
 ```
 
-*Note: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project.*
-
+_Note: Install this npm package with `-g` to global use or with `-D` to add the package as a devDependency in the `package.json` file of your project._
 
 ## Usage
 
-*Note: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff.*
+_Note: Glob support is truth. Find files using the patterns the shell uses, like stars and stuff._
 
 ```bash
 $ banner-cli dist/**/*.css
@@ -51,11 +48,11 @@ from `package.json` data:
 
 ```json
 {
-	"name": "milligram",
-	"version": "1.4.0",
-	"homepage": "https://milligram.io",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>"
+  "name": "milligram",
+  "version": "1.4.0",
+  "homepage": "https://milligram.io",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>"
 }
 ```
 
@@ -66,11 +63,10 @@ to add a banner comment:
  * Milligram v1.4.0
  * https://milligram.io
  *
- * Copyright (c) 2019 CJ Patoilo
+ * Copyright (c) 2020 CJ Patoilo
  * Licensed under the MIT license
  */
 ```
-
 
 ## CLI
 
@@ -99,12 +95,10 @@ $ banner-cli --help
 
 ```
 
-
 ## Contributing
 
-Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/banner-cli#contributing).
-
+Want to contribute? Follow these [recommendations](https://github.com/cjpatoilo/banner-cli/contribute).
 
 ## License
 
-Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://github.com/cjpatoilo/banner-cli#license).
+Designed with ♥ by [CJ Patoilo](https://twitter.com/cjpatoilo). Licensed under the [MIT License](https://cjpatoilo.com/license).

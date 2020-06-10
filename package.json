@@ -1,82 +1,74 @@
 {
-	"name": "banner-cli",
-	"version": "0.14.1",
-	"description": "Create a banner comment from package data.",
-	"homepage": "https://cjpatoilo.com/banner-cli",
-	"repository": "cjpatoilo/banner-cli",
-	"license": "MIT",
-	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
-	"private": false,
-	"bin": "cli.js",
-	"main": "index.js",
-	"files": [
-		"cli.js",
-		"index.js"
-	],
-	"keywords": [
-		"🐥",
-		"author",
-		"automation",
-		"banner",
-		"bundle",
-		"bundles",
-		"comment",
-		"comments",
-		"contributing",
-		"generate",
-		"generator",
-		"license",
-		"npm",
-		"package.json",
-		"version",
-		"versions"
-	],
-	"ignore": [
-		"artwork.psd",
-		".appveyor.yml",
-		".editorconfig",
-		".github",
-		".gitignore",
-		".travis.yml"
-	],
-	"dependencies": {
-		"glob": "^7.1.5",
-		"prepend-file": "^1.3.1",
-		"rasper": "latest"
-	},
-	"devDependencies": {
-		"ava": "^2.4.0",
-		"boeing": "latest",
-		"husky": "^3.0.9",
-		"inject-ga": "^0.2.4",
-		"lint-staged": "^9.4.2",
-		"marshmallow": "latest",
-		"nyc": "^14.1.1",
-		"prettier-standard": "^15.0.1",
-		"rimraf": "^3.0.0"
-	},
-	"scripts": {
-		"deploy": "marshmallow -o docs -i artwork.psd -f -m && inject-ga docs/index.html -o docs/index.html -c 'UA-24389952-13' && boeing docs && rimraf docs",
-		"lint": "prettier-standard --check",
-		"test": "nyc ava"
-	},
-	"engines": {
-		"node": "^12.13.0"
-	},
-	"prettier": {
-		"jsxSingleQuote": false,
-		"trailingComma": "all"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"pre-push": "npm run deploy"
-		}
-	},
-	"lint-staged": {
-		"src/**/*": [
-			"prettier-standard --format",
-			"git add"
-		]
-	}
+  "name": "banner-cli",
+  "version": "0.14.2",
+  "description": "Create a banner comment from package data.",
+  "homepage": "https://cjpatoilo.com/banner-cli",
+  "repository": "cjpatoilo/banner-cli",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "private": false,
+  "bin": "cli.js",
+  "main": "index.js",
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "keywords": [
+    "🐥",
+    "author",
+    "automation",
+    "banner",
+    "bundle",
+    "bundles",
+    "comment",
+    "comments",
+    "contributing",
+    "generate",
+    "generator",
+    "license",
+    "npm",
+    "package.json",
+    "version",
+    "versions"
+  ],
+  "dependencies": {
+    "glob": "^7.1.6",
+    "prepend-file": "^1.3.1",
+    "rasper": "latest"
+  },
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "boeing": "latest",
+    "husky": "^4.2.5",
+    "inject-ga": "^0.2.4",
+    "lint-staged": "^10.2.9",
+    "marshmallow": "latest",
+    "nyc": "^15.1.0",
+    "prettier-standard": "^16.3.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "deploy": "marshmallow -o docs -i artwork.psd -f -m && inject-ga docs/index.html -o docs/index.html -c 'UA-24389952-13' && boeing docs && rimraf docs",
+    "lint": "prettier-standard --check",
+    "test": "nyc ava"
+  },
+  "engines": {
+    "node": "^12.18.0",
+    "npm": "^6.14.5"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  }
 }
