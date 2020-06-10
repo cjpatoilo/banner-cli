@@ -1,0 +1,14 @@
+.npmignore
+.appveyor.yml
+.git
+.github
+.gitignore
+.nyc_output
+.prettierignore
+.travis.yml
+artwork.psd
+coverage
+node_modules
+package-lock.json
+package.json
+test.js
